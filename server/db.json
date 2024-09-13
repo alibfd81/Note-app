@@ -1,0 +1,64 @@
+{
+  "category": [
+    {
+      "title": "1",
+      "id": 1725433065838
+    },
+    {
+      "title": "2",
+      "id": 1725433085576
+    },
+    {
+      "title": "1",
+      "id": 1725641684289
+    },
+    {
+      "title": "sdfsdf",
+      "id": 1725641706158
+    }
+  ],
+  "products": [
+    {
+      "title": "1",
+      "quantity": "01",
+      "category": "1",
+      "id": 1725524938251,
+      "createAt": "2024-09-05T08:28:58.251Z"
+    },
+    {
+      "title": "1",
+      "quantity": "01",
+      "category": "1",
+      "id": 1725603166077,
+      "createAt": "2024-09-06T06:12:46.077Z"
+    },
+    {
+      "title": "fsfdfs",
+      "quantity": "73",
+      "category": "2",
+      "id": 1725690642823,
+      "createAt": "2024-09-07T06:30:42.823Z"
+    },
+    {
+      "title": "sdfsd",
+      "quantity": "02",
+      "category": "2",
+      "id": 1725700831852,
+      "createAt": "2024-09-07T09:20:31.852Z"
+    },
+    {
+      "title": "ali",
+      "quantity": "7",
+      "category": "sdfsdf",
+      "id": 1725715741276,
+      "createAt": "2024-09-07T13:29:01.276Z"
+    },
+    {
+      "title": "Naser",
+      "quantity": "8",
+      "category": "sdfsdf",
+      "id": 1725715936540,
+      "createAt": "2024-09-07T13:32:16.540Z"
+    }
+  ]
+}
