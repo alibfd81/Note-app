@@ -46,7 +46,7 @@ function CategoryContext({ children }) {
         async function getCategory() {
             dispatch({ type: "loading" })
             try {
-                const { data } = await axios.get("http://localhost:4000/category")
+                const { data } = await axios.get("https://json-server-3-seven.vercel.app/category")
                 dispatch({ type: "category/loaded", payload: data })
             }
             catch (error) {
@@ -59,7 +59,7 @@ function CategoryContext({ children }) {
     async function postCategory(lastCategory) {
         dispatch({ type: "loading" })
         try {
-            const { data } = await axios.post("http://localhost:4000/category", lastCategory)
+            const { data } = await axios.post("https://json-server-3-seven.vercel.app/category", lastCategory)
             dispatch({ type: "create/category", payload: data })
             toast.success("دسته بندی با موفقیت افزوده شد")
         } catch (error) {

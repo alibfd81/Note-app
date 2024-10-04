@@ -43,7 +43,7 @@ function ProductsContext({ children }) {
 
     async function getProducts() {
         try {
-            const { data } = await axios.get("http://localhost:4000/products")
+            const { data } = await axios.get("https://json-server-3-seven.vercel.app/products")
             dispatch({ type: "get/products", payload: data })
         } catch (error) {
             console.log(error)
@@ -53,7 +53,7 @@ function ProductsContext({ children }) {
     async function postProducts(newProducts) {
         dispatch({ type: "loading" })
         try {
-            const { data } = await axios.post("http://localhost:4000/products", newProducts)
+            const { data } = await axios.post("https://json-server-3-seven.vercel.app/products", newProducts)
             dispatch({ type: "create/products", payload: data })
         } catch (error) {
             console.log(error)
@@ -62,7 +62,7 @@ function ProductsContext({ children }) {
     async function getProductsId(title) {
         dispatch({ type: "loading" })
         try {
-            const { data } = await axios.get(`http://localhost:4000/products?title_like=${title}`)
+            const { data } = await axios.get(`https://json-server-3-seven.vercel.app/products?title_like=${title}`)
             dispatch({ type: "getProductsTitle", payload: data })
         } catch (error) {
             console.log(error)
@@ -71,7 +71,7 @@ function ProductsContext({ children }) {
     async function getProductsCategory(title) {
         dispatch({ type: "loading" })
         try {
-            const { data } = await axios.get(`http://localhost:4000/products?category_like=${title}`)
+            const { data } = await axios.get(`https://json-server-3-seven.vercel.app/products?category_like=${title}`)
             dispatch({ type: "getProductsTitle", payload: data })
         } catch (error) {
             console.log(error)

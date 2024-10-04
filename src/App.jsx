@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Products from './features/Products'
 import AddCategory from './features/category/AddCategory'
